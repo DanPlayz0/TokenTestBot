@@ -1,5 +1,3 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+const id = Buffer.from(process.argv[2].split(".")[0], "base64");
 
-client.on('ready', () => console.log(`${client.user.username}${client.user.discriminator}`, client.user.id));
-client.login();
+console.log("User ID:", id);
